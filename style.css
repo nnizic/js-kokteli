@@ -1,0 +1,20 @@
+.kontejner {
+  width: 85%;
+  text-align: center;
+  background-color: powderblue;
+  border: 3px solid #0077b6;
+  position: absolute;
+  left: 50%;
+  transform: translatex(-50%);
+}
+.podkontejner {
+  display: inline-block;
+  padding: 10px;
+  margin: 10px;
+  background-color: cornflowerblue;
+  position: relative;
+  width: 250px;
+}
+.maliDiv:hover {
+  background-color: lightblue;
+}
