@@ -11,8 +11,9 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" type="text/css" href="static/style.css" />
-    <title>Responsive Navbar</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" type="text/css" href="../static/style.css" />
+    <title>Kokteli pretraga</title>
   </head>
   <body>
     <header>
@@ -21,10 +22,10 @@
           <a href="#">Virtualis Lab</a>
         </div>
         <ul class="links">
-          <li><a href="hero">Home</a></li>
+          <li><a href="../index.html">Home</a></li>
           <li><a href="about">About</a></li>
-          <li><a href="kokteli_pretraga/index.html">Cocktails</a></li>
-          <li><a href="random_kokteli/index.html">RandomCocktails</a></li>
+          <li><a href="#">Cocktails</a></li>
+          <li><a href="../random_kokteli/index.html">RandomCocktails</a></li>
           <li><a href="contact">Contact</a></li>
         </ul>
         <a href="#" class="action_btn">Get Started</a>
@@ -33,25 +34,19 @@
         </div>
       </div>
       <div class="dropdown_menu">
-        <li><a href="hero">Home</a></li>
+        <li><a href="../index.html">Home</a></li>
         <li><a href="about">About</a></li>
-        <li><a href="kokteli_pretraga/index.html">Cocktails</a></li>
-        <li><a href="random_kokteli/index.html">RandomCocktails</a></li>
+        <li><a href="#">Cocktails</a></li>
+        <li><a href="../random_kokteli/index.html">RandomCocktails</a></li>
         <li><a href="#" class="action_btn">Get Started</a></li>
       </div>
     </header>
 
     <main>
-      <section id="hero">
-        <h1>Dobrodošli</h1>
-        <p>
-          Svaka čast na pronalasku! Nas nije lako naći, ulažemo puno u to da bi
-          bili nedostupni. Ako ste tu , to samo govori u priliog tome da je ovo
-          pravo mjesto za Vas. Uživajte u zasluženom odmoru...
-        </p>
-      </section>
-    </main>
 
+    <div id="botuni">Pretraga:</div>
+    <div id="cocktail" class="koktel">Koktel</div>
+    <script src="script.js"></script>
     <script>
       const toggleBtn = document.querySelector(".toggle_btn");
       const toggleBtnIcon = document.querySelector(".toggle_btn i");
@@ -66,5 +61,6 @@
           : "fa-solid fa-bars";
       };
     </script>
+
   </body>
 </html>
