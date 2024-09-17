@@ -1,0 +1,14 @@
+.kontejner {
+  background-color: lightgray;
+  width: 85%;
+}
+.podkontejner {
+  text-align: center;
+  color: white;
+  font: sans-serif;
+  background-color: cornflowerblue;
+  position: absolute;
+  width: 50%;
+  left: 50%;
+  transform: translatex(-50%);
+}
