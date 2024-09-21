@@ -1,13 +1,15 @@
 .kontejner {
-  background-color: lightgray;
-  width: 85%;
+  width: 100%;
+}
+.map_kontejner {
+  width: 100%;
 }
 .podkontejner {
   text-align: center;
   color: white;
   font: sans-serif;
   background-color: cornflowerblue;
-  position: absolute;
+  position: relative;
   width: 50%;
   left: 50%;
   transform: translatex(-50%);
