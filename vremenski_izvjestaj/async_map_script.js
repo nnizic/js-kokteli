@@ -36,6 +36,12 @@ function fetchWeatherIcon(icon) {
       return '<h7>no icon found</h7>';
   }
 }
+
+function croatianDate(date) {
+  const splitter = date.split('-');
+  const datum = `${splitter[2]}-${splitter[1]}-${splitter[0]}`;
+  return datum;
+}
 // Call the function and handle the result
 fetchWeatherData()
   .then((weatherData) => {
@@ -44,7 +50,7 @@ fetchWeatherData()
       mappodkontejner.classList.add('podkontejner');
       mapkontejner.append(mappodkontejner);
       mappodkontejner.innerHTML = `<p>${fetchWeatherIcon(day.icon)}
-        <p>Za dan: ${day.datetime}</p><p>Temperatura: ${day.temperature}</p><p>Opis: ${day.description}</p>`;
+        <p>Za dan: ${croatianDate(day.datetime)}</p><p>Temperatura: ${day.temperature}</p><p>Opis: ${day.description}</p>`;
     });
   })
   .catch((err) => {
