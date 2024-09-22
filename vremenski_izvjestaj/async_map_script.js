@@ -28,6 +28,8 @@ function fetchWeatherIcon(icon) {
   switch (icon) {
     case 'partly-cloudy-day':
       return "<i class='fas fa-cloud-sun' style='font-size:36px'></i>";
+    case 'cloudy':
+      return "<i class='fas fa-cloud' style='font-size:36px'></i>";
     case 'rain':
       return "<i class='fas fa-cloud-rain' style='font-size:36px'></i>";
     case 'clear-day':
