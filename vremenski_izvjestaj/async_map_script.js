@@ -34,6 +34,8 @@ function fetchWeatherIcon(icon) {
       return "<i class='fas fa-cloud-rain' style='font-size:36px'></i>";
     case 'clear-day':
       return "<i class='fas fa-sun' style='font-size:36px'></i>";
+    case 'wind':
+      return "<i class='fas fa-wind' style='font-size:36px'></i>";
     default:
       return '<h7>no icon found</h7>';
   }
